@@ -1,0 +1,10 @@
+/* Le container contient le boutton inscription et le boutton connexion
+   Ces derniers doivent être au milieu de la page Index */
+.flex-container {
+     padding: 30px;
+}
+.flex-item {
+     margin: auto;
+     width: 100px;
+     height: 100px;  
+}
