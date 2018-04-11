@@ -125,6 +125,66 @@
 
 /*Accueil*/
 
+
+.backgroundAccueil{
+    width: 100vw;
+    height: 200vw;
+}
+
+.logo{
+    position: absolute;
+	left: 25%;
+	width: 50%;
+	right: 25%;
+	top: 50%;
+	height: auto;
+	z-index: 1;
+}
+
+@media (min-width: 768px) {
+	.logo {
+       left: 37%;
+	   width: 26%;
+	   right: 37%;
+	   top: 35%;
+	}
+}
+
+.slogan{
+    position: absolute;
+    font-size: 1.8rem;
+    color: #fff800;
+    top: 20%;
+    text-align: center;
+    left: 10%;
+    right: 10%;
+    font-weight: bold;
+}
+
+.btn-connexion{
+    width: 70%;
+    left: 15%;
+    right: 15%;
+    margin-bottom: auto; 
+    position: absolute;
+    bottom: 5%;
+    opacity: 0.9;
+}
+
+.btn-inscription{
+    width: 70%;
+    left: 15%;
+    right: 15%;
+    margin-bottom: auto; 
+    position: absolute;
+    bottom: -5%;
+    opacity: 0.9;
+}
+
+.container{
+    padding-left: 0;
+    padding-right: 0;
+=======
 body{
     background: url(img/background.png) center fixed;
 }
@@ -181,11 +241,119 @@ body{
 
 .btn-inscription:hover{
     background-color:orange; 
+develop
 }
 
 .btn-arene{
     background-color:#fff800;
     color: black;
+.navbar
+    width: 20rem;
+    left: 30rem;
+    right: 30rem;
+}/* Le container contient le boutton inscription et le boutton connexion
+   Ces derniers doivent être au milieu de la page Index */
+
+
+
+
+
+/*.navi {
+    position :fixed;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    background-color: #000000;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #fff800;
+ ;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #818181;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+/* Le CSS - logoavatar du bouton d'inscription */
+
+.img-fluid{
+    padding-bottom: 10px;
+}
+
+
+/* Ici le Css provoque un effet fullscreen sur la navbar*/
+
+.navbar-collapse {
+    height: 93vh;
+}
+
+.bouton_deconnexion{
+        border-color:#fff800;
+        background-color: #fff800;
+        width: 50px;
+        
+}
+
+.logo_Avatar_Inscription{
+    padding-bottom: 10px
+}
+
+.logo_Avatar_Inscription{
+    opacity: 1;
+}
+.logo_Avatar_Inscription:hover{
+    opacity: 0.7;
+}
+
+.logo_Avatar_Inscription:active{
+    opacity: 0.3;
+}
+
+@media (min-width:750px) {
+    .navbar-collapse {
+    height: 10vh;
+}
+}
+
     width: 100rem;
     left: 30rem;
     right: 30rem;
