@@ -1,0 +1,32 @@
+<html>
+<script>
+class SuperHero { /*reférence données API*/
+	constructor(name, pv) {
+  	this.nom = nom ;
+    this.pv = pv;
+    this.attaque = {
+    	combat : name,
+      power : puissance
+    }
+  }
+  displayattaque(arg) {
+    console.log (`${this.nom} attaque ${arg.nom} avec ${this.attaque.name}. Il inflige ${this.attaque.puissance} dégâts.`);
+}
+ degat(cible) {
+  cible.pv = cible.pv - this.attaque.puissance
+  if(cible.pv>0) {
+    console.log(`${cible.nom} à son nombre de PV affecté à ${cible.pv}`);
+  } else {
+    console.log(`${cible.nom} est KO !`);
+  }
+  }
+}
+const sh1 = new SuperHero("Batman", 10);
+const sh2 = new SuperHero("superman", 15);
+
+p2.displayattaque(sh1);
+p2.degat(sh1);
+p2.degat(sh1);
+p1.degat(sh2);
+</script>
+</html>
