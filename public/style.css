@@ -1,3 +1,128 @@
+
+
+
+/*Debut du carousel*/
+
+
+#carouselExampleControls {
+  font-size: 2.5em;
+}
+.carousel-caption {
+  bottom : 50px;
+  top : 50px;
+}
+.mario_carousel {
+  width : 200px;
+}
+.carousel-caption>.gift_carousel {
+  width: 6%;
+}
+.carousel-caption>.mario_carousel {
+  margin : 10px;
+}
+.textCarousel {
+  font-size: 1.6em;
+  color: yellow;
+  margin : 3px;
+}
+.textCarousel1 {
+  color: white;
+}
+.btn-warning {
+  width: 200px;
+}
+.textCarousel2 {
+  margin-bottom: 60px;
+}
+.textCarousel3 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+@media (max-width: 1200px) {
+  #carouselExampleControls {
+    font-size : 1.5em;
+  }
+}
+@media (max-width: 800px) {
+  #carouselExampleControls {
+    font-size: 0.8em;
+  }
+}
+@media (max-width: 600px) {
+  #carouselExampleControls {
+    font-size: 0.4em;
+  }
+}
+@media (max-width: 1200px) {
+  .carousel-caption>.mario_carousel {
+    width: 100px;
+    margin-bottom: 5px;
+  }
+}
+@media (max-width: 800px) {
+  .carousel-caption>.mario_carousel {
+    width: 100px;
+    margin-bottom: 5px;
+  }
+}
+@media (max-width: 600px) {
+  .carousel-caption>.mario_carousel {
+    width: 40px;
+    margin-bottom: 2px;
+  }
+}
+@media (max-width: 1200px) {
+  .btn-warning {
+    font-size: 0.9em;
+    width: 200px;
+  }
+}
+@media (max-width: 800px) {
+  .btn-warning {
+    font-size: 0.8em;
+    width: 150px;
+  }
+}
+@media (max-width: 600px) {
+.btn-warning {
+    font-size: 0.8em;
+    width: 80px;
+    height: 15Px;
+    padding-top: 0px;
+  }
+}
+@media (max-width: 1200px) {
+  .textCarousel2 {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .textCarousel2 {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 1200px) {
+  .textCarousel3 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+@media (max-width: 800px) {
+  .textCarousel3 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+@media (max-width: 600px) {
+  .carousel-caption {
+    top: 35px;
+    bottom: -5px;
+  }
+}
+
+
+/*Fin du carousel*/
+
 /*Accueil*/
 
 
