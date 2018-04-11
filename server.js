@@ -10,7 +10,7 @@ app.set('view engine', 'ejs');
 
 // use res.render to load up an ejs view file
 
-// index page 
+// index page
 app.get('/', function(req, res) {
     res.render('pages/index');
 });
@@ -20,9 +20,14 @@ app.get('/paris', function(req, res) {
     res.render('pages/paris');
 });
 
-// about page 
+// about page
 app.get('/about', function(req, res) {
     res.render('pages/about');
+});
+
+// profil page
+app.get('/profil', function(req, res) {
+    res.render('pages/profil');
 });
 
 app.listen(3000);
