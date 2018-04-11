@@ -1,4 +1,14 @@
 
+/* ----- Navbar games ----- */
+.nav-games {
+    background-color: rgb(34, 34, 36);
+}
+
+.nav-games li img {
+    border-radius: 0.2rem;
+}
+
+
 
 
 /*Debut du carousel*/
@@ -38,33 +48,39 @@
   padding-top: 100px;
   padding-bottom: 100px;
 }
+
 @media (max-width: 1200px) {
   #carouselExampleControls {
     font-size : 1.5em;
   }
 }
+
 @media (max-width: 800px) {
   #carouselExampleControls {
     font-size: 0.8em;
   }
 }
+
 @media (max-width: 600px) {
   #carouselExampleControls {
     font-size: 0.4em;
   }
 }
+
 @media (max-width: 1200px) {
   .carousel-caption>.mario_carousel {
     width: 100px;
     margin-bottom: 5px;
   }
 }
+
 @media (max-width: 800px) {
   .carousel-caption>.mario_carousel {
     width: 100px;
     margin-bottom: 5px;
   }
 }
+
 @media (max-width: 600px) {
   .carousel-caption>.mario_carousel {
     width: 40px;
@@ -113,6 +129,7 @@
     padding-bottom: 10px;
   }
 }
+
 @media (max-width: 600px) {
   .carousel-caption {
     top: 35px;
@@ -187,6 +204,7 @@
 =======
 body{
     background: url(img/background.png) center fixed;
+    font-size: 62.5%;
 }
  
 .slogan{
