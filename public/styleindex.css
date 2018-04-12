@@ -2,6 +2,8 @@
 
 body{
     background: url(img/background.png) center fixed;
+    font-family: 'Gugi', cursive;
+
   }
 
 .slogan{
@@ -65,7 +67,6 @@ body{
     left: 30rem;
     right: 30rem;
 }
-
 @media (min-width: 768px) {
 
     body{
