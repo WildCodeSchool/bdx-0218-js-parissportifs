@@ -1,0 +1,15 @@
+.navbar-custom {
+    height: 93vh;
+}
+
+.bouton_deconnexion{
+        border-color:#fff800;
+        background-color: #fff800;
+        width: 40px;
+
+}
+
+@media (min-width:750px) {
+    .navbar-custom {
+    height: 10vh;
+}

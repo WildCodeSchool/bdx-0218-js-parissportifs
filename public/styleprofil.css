@@ -1,0 +1,8 @@
+.flex-container {
+     padding: 30px;
+}
+.flex-item {
+     margin: auto;
+     width: 100px;
+     height: 100px;
+}
