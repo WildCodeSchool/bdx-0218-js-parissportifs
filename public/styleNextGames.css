@@ -1,0 +1,40 @@
+.nextGames {
+    font-family: 'Gugi', cursive;
+    font-size: 15px;
+}
+
+.logoDiv {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.gameLogo {
+     width: 20%;
+}
+
+.matches{
+    padding-top: 5px;
+    padding-bottom: 15px;
+    border-top-color: yellow;
+    border-top-style: solid;
+    margin-bottom: 5px;
+}
+
+.matches:hover {
+    background: url(img/background.png) center;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 0 20px rgba(5, 5, 5, 1);
+}
+
+.nextGamesPos {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.timeGame {
+    font-size: 13px;
+}
