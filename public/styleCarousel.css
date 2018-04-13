@@ -1,12 +1,9 @@
 /*début caroussel*/
 
-
-#carouselExampleControls {
-  font-size: 2.5em;
-}
 .carousel-caption {
+  font-family: 'Gugi', cursive;
   bottom : 50px;
-  top : 50px;
+  top : 15px;
 }
 .mario_carousel {
   /* width : 300px; */
@@ -41,65 +38,28 @@
   padding-bottom: 100px;
 }
 @media (max-width: 1200px) {
-  #carouselExampleControls {
-    font-size : 1.5em;
-  }
-}
-@media (max-width: 800px) {
-  #carouselExampleControls {
-    font-size: 0.8em;
-  }
-}
-@media (max-width: 600px) {
-  #carouselExampleControls {
-    font-size: 0.4em;
+  .carou{
+    max-width: 100%;
+    height : 900px;
   }
 }
 @media (max-width: 800px) {
   .carou{
     max-width: 100%;
+    height : 700px;
+  }
+}
+@media (max-width: 600px) {
+  .carou{
+    max-width: 100%;
     height : 500px;
   }
-}
-@media (max-width: 600px) {
-  .car{
-    max-width: 100%;
-    height : 400px;
-  }
-}
-/* @media (max-width: 1200px) {
-  .carousel-caption>.mario_carousel {
-    width: 100px;
-    margin-bottom: 5px;
-  }
-}
-@media (max-width: 800px) {
-  .carousel-caption>.mario_carousel {
-    width: 150px;
-    margin-bottom: 5px;
-  }
-}
-@media (max-width: 600px) {
-  .carousel-caption>.mario_carousel {
-    width: 150px;
-    margin-bottom: 2px;
-  } */
 }
 @media (max-width: 1200px) {
   .btn-warning {
     font-size: 3em;
-    width: 200px;
-    padding-top: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
-    margin-right: 20px;
-    margin-top: 0px;
-  }
-}
-@media (max-width: 800px) {
-  .btn-warning {
-    font-size: 2em;
-    width: 250px;
+    font-weight: bold;
+    width: 300px;
     height: 40Px;
     padding-top: 0px;
     padding-left: 0px;
@@ -108,33 +68,48 @@
     margin-top: 0px;
   }
 }
-@media (max-width: 600px) {
-.btn-warning {
+@media (max-width: 800px) {
+  .btn-warning {
     font-size: 1.5em;
     font-weight: bold;
-    width: 110px;
-    height: 30Px;
+    width: 250px;
+    height: 40Px;
     padding-top: 0px;
     padding-left: 0px;
     padding-right: 0px;
-    margin-right: 5px;
+    margin-right: 10px;
+    margin-top: 0px;
+  }
+}
+@media (max-width: 600px) {
+.btn-warning {
+    font-size: 0.7em;
+    font-weight: bold;
+    width: 119px;
+    height: 25Px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    margin-right: 2px;
     margin-top: 5px;
   }
 }
 @media (max-width: 1200px) {
 
   .textCarousel{
-    font-size: 2.8em;
+    font-size: 2em;
     margin-bottom: 10px;
   }
   .textCarousel2 {
-    font-size: 2.8em;
+    font-size: 2em;
   }
 }
 @media (max-width: 800px) {
 
   .textCarousel{
     font-size: 2em;
+
     margin-bottom: 5px;
   }
   .textCarousel2 {
@@ -145,11 +120,13 @@
 @media (max-width: 600px) {
 
   .textCarousel{
-    font-size: 1.8em;
+    font-size: 1em;
     margin-bottom: 2px;
   }
   .textCarousel2 {
-    font-size: 1.8em;
+    font-size: 1em;
+    padding-top: 5px;
+    padding-bottom: 5px;
     margin-bottom: 5px;
   }
 }
@@ -157,34 +134,43 @@
 
 @media (max-width: 1200px) {
   .textCarousel3 {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    font-size: 2em;
+    margin-top: 90px;
+    padding-bottom: 10px;
   }
 }
 @media (max-width: 800px) {
   .textCarousel3 {
-    font-size: 2.8em;
-    padding-top: 60px;
+    font-size: 1em;
+    margin-top: 90px;
     padding-bottom: 10px;
   }
 }
 @media (max-width: 600px) {
   .textCarousel3 {
-    font-size: 2.8em;
-    padding-top: 60px;
-    padding-bottom: 10px;
+    font-size: 1em;
+    margin-top: 20px;
+    padding-bottom: 5px;
   }
 }
-
+@media (max-width: 1200px) {
+  .carousel-caption {
+    top: 25px;
+  }
+}
 @media (max-width: 800px) {
   .carousel-caption {
-    top: 50px;
+    top: 0px;
   }
 }
 @media (max-width: 600px) {
   .carousel-caption {
-    top: 40px;
+    top: 0px;
   }
 }
-
+@media (max-width: 600px) {
+  .mario_carousel {
+    width : 150px;
+}
+}
 /*fin carousel */
