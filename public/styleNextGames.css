@@ -6,21 +6,179 @@
 .logoDiv {
     text-align: center;
     padding-top: 5px;
-    padding-bottom: 10px;
+    padding-bottom: 5   px;
 }
 
 .gameLogo {
      width: 20%;
+     padding-bottom: 10px;
+}
+
+.flash {
+    font-weight: bolder;
+    font-size: 1.5rem;
+    animation: flashing linear 2s 1s infinite;
+}
+
+@keyframes flashing {
+    0% { opacity: 1; } 
+	50% { opacity: .1; } 
+	100% { opacity: 1; }
 }
 
 .matches{
-    padding-top: 5px;
+    padding-top: 3px;
     padding-bottom: 15px;
     border-top-color: yellow;
     border-top-style: solid;
     margin-bottom: 5px;
 }
 
+.flashit1{
+	animation: flash1 linear 5s infinite;
+}
+
+@keyframes flash1 {
+	10% {
+    background-color: yellow;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 5 5 5 rgba(5, 5, 5, 1);
+    } 
+    20% {
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    text-shadow: 5 5 5 rgba(5, 5, 5, 1);
+    } 
+	100% { 
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    text-shadow: 5 5 5 rgba(5, 5, 5, 1);
+    }
+} 
+
+.flashit2{
+	animation: flash2 linear 5s infinite;
+}
+
+@keyframes flash2 {
+	20% { 
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    text-shadow: 5 5 5 rgba(5, 5, 5, 1); } 
+	30% {
+    background-color: yellow;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 5 5 5 rgba(5, 5, 5, 1);
+    } 
+    40% {
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    text-shadow: 5 5 5 rgba(5, 5, 5, 1);
+    } 
+	100% {
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    text-shadow: 5 5 5 rgba(5, 5, 5, 1);}
+} 
+
+.flashit3{
+	animation: flash3 linear 5s infinite;
+}
+
+@keyframes flash3 {
+	40% {
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    text-shadow: 5 5 5 rgba(5, 5, 5, 1);
+    } 
+	50% {
+    background-color: yellow;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 5 5 5 rgba(5, 5, 5, 1);
+    } 
+    60% {
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    text-shadow: 5 5 5 rgba(5, 5, 5, 1);
+    } 
+	100% { }
+} 
+
+.flashit4{
+	animation: flash4 linear 5s infinite;
+}
+
+@keyframes flash4 {
+	60% {
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    text-shadow: 5 5 5 rgba(5, 5, 5, 1);} 
+	70% {
+    background-color: yellow;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 5 5 5 rgba(5, 5, 5, 1);
+    } 
+    80% {
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    text-shadow: 5 5 5 rgba(5, 5, 5, 1);
+    } 
+	100% { }
+} 
+
+.flashit5{
+	animation: flash5 linear 5s infinite;
+}
+
+@keyframes flash5 {
+	80% {
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    text-shadow: 5 5 5 rgba(5, 5, 5, 1);} 
+	90% {
+    background-color: yellow;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 5 5 5 rgba(5, 5, 5, 1);
+    } 
+    100% {
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    text-shadow: 5 5 5 rgba(5, 5, 5, 1);
+    } 
+	100% { }
+} 
 .matches:hover {
     background: url(img/background.png) center;
     border-radius: 10px;
