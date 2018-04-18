@@ -56,13 +56,25 @@
                 </button>
               </div>
               <div class="modal-body">
-                <form>
+                <form action="/quotes" method="POST">
                 <div class="form-group">
                     <input type="pseudo" class="form-control" id="recipient-pseudo" placeholder="pseudo">
                   </div>
                   <div class="form-group">
                     <input type="email" class="form-control" id="recipient-email" placeholder="email">
-                  </div><p class="text-center">Choisis ton avatar</p>
+                  </div>
+
+
+
+                  <div class="form-group">
+                    <input type="password" class="form-control" id="recipient-password" placeholder="mot de passe">
+                  </div>
+                  <div class="form-group">
+                    <input type="password" class="form-control" id="recipient-password" placeholder="confirmer mot de passe">
+                  </div>
+                </form>
+              </div>
+                <p class="text-center">Choisis ton avatar</p>
 
   <div class="container">
     <div class="row">
@@ -86,17 +98,6 @@
             <img src="logo-avatar/trunk.png" class="img-fluid logo_Avatar_Inscription grab" alt="Logo-trunk"></div>
 </div>
 </div>
-
-
-
-                  <div class="form-group">
-                    <input type="password" class="form-control" id="recipient-password" placeholder="mot de passe">
-                  </div>
-                  <div class="form-group">
-                    <input type="password" class="form-control" id="recipient-password" placeholder="confirmer mot de passe">
-                  </div>
-                </form>
-              </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-primary btn-arene">Je rentre dans l'arene</button>
               </div>

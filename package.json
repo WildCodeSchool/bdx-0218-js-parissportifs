@@ -2,7 +2,11 @@
     "name": "node-ejs",
     "main": "server.js",
     "dependencies": {
+        "body-parser": "^1.18.2",
         "ejs": "^1.0.0",
-        "express": "^4.6.1"
+        "express": "^4.16.3",
+        "express-session": "^1.15.6",
+        "mysql": "^2.15.0",
+        "session-file-store": "^1.2.0"
     }
 }
