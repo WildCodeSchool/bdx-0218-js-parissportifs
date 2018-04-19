@@ -27,38 +27,26 @@ body{
     }
 
 .sloganAppear {
-	animation: appear linear 5s;
+	animation: appear linear 2s;
 }
 .logoAppear {
-	animation: zoom linear 5s;
-}
-
-.btnAppear {
-	animation: btnappear linear 6s;
+	animation: zoom linear 2s;
 }
 
 @keyframes zoom {
 	0% { left: 45%; right: 45%; width: 10%; }
-    20% { left: 25%; right: 25%; width: 50%; }
-	40% { left: 1%; right: 1%; width: 98%; }
-	50% { left: 13%; right: 13%;width: 74%; } 
+    20% { left: 40%; right: 40%; width: 20%; }
+	40% { left: 35%; right: 35%; width: 30%; }
+	60% { left: 30%; right: 30%;width: 40%; } 
 	80% { left: 25%; right: 25%;width: 50%; }
-}
-
-@keyframes btnappear {
-	0% { opacity: 0; } 
-	90% { opacity: 0; } 
-	100% { opacity: 0.9; }
 }
 
 @keyframes appear {
 	0% { opacity: 0; } 
-	20% { margin-top: 20%;
-          font-size: 2rem;
+	20% { font-size: 2rem;
           color: red;
           opacity: 0; } 
-	50% { margin-top: 30%;
-          opacity: 0.8; } 
+	50% { opacity: 0.8; } 
 	100% { opacity: 1; }
 }
 
@@ -73,7 +61,6 @@ body{
     border-radius: 10px;
     margin-top: 1%;
 }
-
 
 .btn-connexion:hover{
     background-color:orange;
