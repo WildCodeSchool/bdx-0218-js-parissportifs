@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <% include ../partials/head.ejs %>
+<% include ../partials/header.ejs %>
 
   <body>
 
-    <div class="container">
+    <div class="container containerPills">
       <ul class="nav nav-pills nav-fill" role="tablist">
         <li class="nav-item">
           <a class="nav-link active" data-toggle="pill" href="#amis">AMIS</a>
@@ -17,22 +18,107 @@
         </li>
       </ul>
 
-      <!-- Tab panes -->
+
       <div class="tab-content">
-        <div id="amis" class="container tab-pane active"><br>
-          <h3>AMIS POUR LA VIE</h3>
-          <p>EAAAASSSSSYYYYY</p>
+          <div id="amis" class="container tab-pane active"><br>
+            <div class="container containerAvatar">
+              <div class="row row-no-gutter">
+                <div class="col-md-2 ml-auto col-4">
+                  <img class="img-fluid fluid1" src="/logo-avatar/batman.png" alt="imageAmi" />
+                  <p class="pseudoAmisProfil">BlooD35</p>
+                </div>
+                <div class="col-md-2 ml-auto col-4">
+                  <img class="img-fluid fluid1" src="/logo-avatar/mario.png" alt="imageAmi" />
+                  <p class="pseudoAmisProfil">DadOrahan</p>
+                </div>
+                <div class="col-md-2 ml-auto col-4">
+                  <img class="img-fluid fluid1" src="/logo-avatar/ronaldo.png" alt="imageAmi" />
+                  <p class="pseudoAmisProfil">Guizmo</p>
+                </div>
+                <div class="col-md-2 ml-auto col-4">
+                  <img class="img-fluid fluid1" src="/logo-avatar/saalor.png" alt="imageAmi" />
+                  <p class="pseudoAmisProfil">PinkCarott</p>
+                </div>
+                  <div class="col-md-2 ml-auto col-4">
+                  <button type="button" class="fluid1 btn btn-default btn-circle">+<i class="glyphicon glyphicon-ok"></i></button>
+                  <p class="pseudoAmisProfil">Ajouter un ami</p>
+                  </p>
+                </div>
+              </div>
+            </div>
+
         </div>
         <div id="parisencours" class="container tab-pane fade"><br>
-          <h3>PARIS EN COURS</h3>
-          <p>YALLLLAAAH</p>
+          <div class="container containerParis">
+          <div class="row row-no-gutter">
+            <div class="col-md-2 ml-auto col-4 textMatch">Fin du match le 28 Avril 2018 a 9h</div>
+            <div class="col-md-2 ml-auto col-4"><img class="img-fluid fluid2" src="/logo-avatar/mario.png" alt="imageAmi" /></div>
+            <div class="col-md-2 ml-auto col-4">VS</div>
+            <div class="col-md-2 ml-auto col-4"><img class="img-fluid fluid2" src="/logo-avatar/saalor.png" alt="imageAmi" /></div>
+            <div class="col-md-2 ml-auto col-4"><img class="img-fluid LotProfil" src="/elements_carousel/gift.png" alt="image_responsive"><p class="textLot">Une place de cinema</p></div>
+          </div>
         </div>
+            <div class="container containerParis">
+            <div class="row row-no-gutter">
+            <div class="col-md-2 ml-auto col-4 textMatch">Fin du match le 30 Avril 2018 a 14h</div>
+            <div class="col-md-2 ml-auto col-4"><img class="img-fluid fluid2" src="/logo-avatar/ronaldo.png" alt="imageAmi" /></div>
+            <div class="col-md-2 ml-auto col-4">VS</div>
+            <div class="col-md-2 ml-auto col-4"><img class="img-fluid fluid2" src="/logo-avatar/overw.png" alt="imageAmi" /></div>
+            <div class="col-md-2 ml-auto col-4"><img class="img-fluid LotProfil" src="/elements_carousel/gift.png" alt="image_responsive"><p class="textLot1">Une biere</p></div>
+            </div>
+          </div>
+            <div class="container containerParis">
+            <div class="row row-no-gutter">
+            <div class="col-md-2 ml-auto col-4 textMatch">Fin du match le 01 mai 2018 a 2h</div>
+            <div class="col-md-2 ml-auto col-4"><img class="img-fluid fluid2" src="/logo-avatar/minet.png" alt="imageAmi" /></div>
+            <div class="col-md-2 ml-auto col-4">VS</div>
+            <div class="col-md-2 ml-auto col-4"><img class="img-fluid fluid2" src="/logo-avatar/trunk.png" alt="imageAmi" /></div>
+            <div class="col-md-2 ml-auto col-4"><img class="img-fluid LotProfil" src="/elements_carousel/gift.png" alt="image_responsive"><p class="textLot2">Une carte de jeux</p></div>
+            </div>
+          </div>
+        </div>
+          <!-- <div class="container-fluid paris">
+            <div="row align-items-start">
+            <div class="col-md-2 ml-auto col-4">
+              </div>
+              <div class="col-md-2 ml-auto col-4">
+              </div>
+              <div class="col-md-2 ml-auto col-4">
+            </div>
+              <div class="col-md-2 ml-auto col-4">
+
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+        </div> -->
+
+  <!-- <div class="row justify-content-start">
+    <div class="col-4">
+
+    </div>
+    <div class="col-4">
+
+    </div>
+  </div>
+    <div class="col-4">
+
+    </div>
+  </div>
+    <div class="row justify-content-end">
+    <div class="col-4">
+      <img class="fluid2" src="/elements_carousel/gift.png" alt="image_responsive"><p class="textMatch">Une place de ciné</p>
+    </div>
+  </div> -->
+
         <div id="historique" class="container tab-pane fade"><br>
           <h3>HISTORIQUE</h3>
           <p>Demain à la une </p>
         </div>
       </div>
-    </div>
+</div>
+
 
     <% include ../partials/script %>
   </body>
