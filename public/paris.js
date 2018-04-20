@@ -6,7 +6,7 @@ fetch('https://api.pandascore.co/lol/matches/upcoming.json?token=mJ8REQ0o29P34vi
     document.getElementById("lol_match1_opp1").innerHTML = json[0].opponents[0].opponent.name;
    document.getElementById("lol_match1_opp2").innerHTML = json[0].opponents[1].opponent.name;
    document.getElementById("lol_match1_date").innerHTML = json[0].begin_at;
-  // document.getElementById("lol_match1_id").innerHTML = json[0].id;
+  document.getElementById("lol_match1_id") = json[0].id;
    document.getElementById("lol_match2_opp1").innerHTML = json[1].opponents[0].opponent.name;
    document.getElementById("lol_match2_opp2").innerHTML = json[1].opponents[1].opponent.name;
    document.getElementById("lol_match2_date").innerHTML = json[1].begin_at; 
@@ -29,8 +29,7 @@ fetch('https://api.pandascore.co/lol/matches/upcoming.json?token=mJ8REQ0o29P34vi
 fetch('https://api.pandascore.co/ow/matches/upcoming.json?token=mJ8REQ0o29P34viQidrlA7hIs6vKs94-orJbzoWY-2ZMMY9TAoo')
     .then(res => res.json())
     .then(json => {
-        console.log(json[0].serie_id)
-
+    console.log(json[0].serie_id)
     console.log("OW json", json)
     document.getElementById("ow_match1_opp1").innerHTML = json[0].opponents[0].opponent.name;
    document.getElementById("ow_match1_opp2").innerHTML = json[0].opponents[1].opponent.name;
