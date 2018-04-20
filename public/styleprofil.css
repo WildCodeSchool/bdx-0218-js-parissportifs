@@ -12,9 +12,11 @@
 }
 .container .tab-pane .active {
   padding-top: 5px;
+  font-family: 'Gugi', cursive;
 }
 .containerAvatar {
   padding-top: 40px;
+  font-family: 'Gugi', cursive;
 }
 .fluid1 {
   width : 150px;
@@ -22,15 +24,19 @@
   opacity: 1;
 
 }
+.pseudoAmisProfil {
+  top: 10px;
+}
 .fluid1:hover{
 opacity: 0.7;
 }
 .btn-circle {
   background-color: white;
   color: black;
-  width: 150px;
-  height: 150px;
+  width: 140px;
+  height: 140px;
   padding: 10px 16px;
+  margin-top: 5px;
   right: 200px;
   font-size: 24px;
   border-radius: 150px;
@@ -64,10 +70,12 @@ opacity: 0.7;
 /*css de la partie Paris en cours*/
 
 .containerParis {
+  font-family: 'Gugi', cursive;
   padding-top: 40px;
 }
 .textMatch {
   padding-top: 30px;
+  text-align: center;
 }
 .LotProfil {
   padding-left: 30px;
@@ -77,12 +85,19 @@ opacity: 0.7;
 .textLot {
   padding-top: 5px;
 }
+.textLot1 {
+  padding-top: 5px;
+  padding-left: 20px;
+}
+.textLot2 {
+  padding-top: 5px;
+}
 .fluid2 {
   height: 100px;
   width: 100px;
   margin: 0 auto;
   animation-name: stretch;
-  animation-duration: 1.5s;
+  animation-duration: 3s;
   animation-timing-function: ease-out;
   animation-delay: 0;
   animation-direction: alternate;
@@ -92,17 +107,15 @@ opacity: 0.7;
 }
 
 @keyframes stretch {
-  0% {
-    transform: scale(.3);
-    background-color: black;
+  20% {
     border-radius: 100%;
   }
   50% {
-    background-color: black;
+    background-color: none;
   }
   100% {
     transform: scale(1.5);
-    background-color: yellow;
+    background-color: none;
   }
 }
 @media (max-width: )
