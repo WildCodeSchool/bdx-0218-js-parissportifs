@@ -3,7 +3,6 @@
 body{
     background: url(img/background.png) center fixed;
     font-family: 'Gugi', cursive;
-
   }
 
 .slogan{
@@ -19,12 +18,36 @@ body{
 .logo{
     position: relative;
 	left: 25%;
-	width: 50%;
-	right: 25%;
+    width: 50%;
+    right: 25%;
 	height: auto;
 	z-index: 1;
     margin-top: 5%;
     margin-bottom: 10%;
+    }
+
+.sloganAppear {
+	animation: appear linear 2s;
+}
+.logoAppear {
+	animation: zoom linear 2s;
+}
+
+@keyframes zoom {
+	0% { left: 45%; right: 45%; width: 10%; }
+    20% { left: 40%; right: 40%; width: 20%; }
+	40% { left: 35%; right: 35%; width: 30%; }
+	60% { left: 30%; right: 30%;width: 40%; } 
+	80% { left: 25%; right: 25%;width: 50%; }
+}
+
+@keyframes appear {
+	0% { opacity: 0; } 
+	20% { font-size: 2rem;
+          color: red;
+          opacity: 0; } 
+	50% { opacity: 0.8; } 
+	100% { opacity: 1; }
 }
 
 .btn-connexion{

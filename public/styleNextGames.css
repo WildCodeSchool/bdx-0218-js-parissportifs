@@ -3,18 +3,40 @@
     font-size: 15px;
 }
 
+
+li.nav-item {
+    width: 30%;
+}
+
 .logoDiv {
     text-align: center;
     padding-top: 5px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }
 
 .gameLogo {
-     width: 20%;
+     width: 50%;
+     padding-bottom: 10px;
+}
+
+.active {
+    border: 3
+}
+
+.flash {
+    font-weight: bolder;
+    font-size: 1.5rem;
+    animation: flashing linear 2s 1s infinite;
+}
+
+@keyframes flashing {
+    0% { opacity: 1; } 
+	50% { opacity: .1; } 
+	100% { opacity: 1; }
 }
 
 .matches{
-    padding-top: 5px;
+    padding-top: 3px;
     padding-bottom: 15px;
     border-top-color: yellow;
     border-top-style: solid;
@@ -26,7 +48,6 @@
     border-radius: 10px;
     color: white;
     font-weight: bold;
-    text-shadow: 0 0 20px rgba(5, 5, 5, 1);
 }
 
 .nextGamesPos {
@@ -36,5 +57,5 @@
 }
 
 .timeGame {
-    font-size: 13px;
+    font-size: 15px;
 }
