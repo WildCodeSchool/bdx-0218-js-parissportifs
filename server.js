@@ -30,5 +30,10 @@ app.get('/profil', function(req, res) {
     res.render('pages/profil');
 });
 
+// game
+app.get('/game', function(req, res) {
+    res.render('pages/game');
+});
+
 app.listen(3000);
 console.log('3000 is the magic port');
