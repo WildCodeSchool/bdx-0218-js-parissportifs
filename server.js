@@ -31,6 +31,9 @@ app.get('/profil', function(req, res) {
 });
 
 // game
+app.get('/game/:id(\\d+)', function(req, res) {
+    res.render('pages/game');
+});
 app.get('/game', function(req, res) {
     res.render('pages/game');
 });
