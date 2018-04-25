@@ -56,6 +56,10 @@ li.nav-item {
     padding-bottom: 5px;
 }
 
+.team-logo {
+    max-width: 40%;
+}
+
 .timeGame {
     font-size: 15px;
 }
