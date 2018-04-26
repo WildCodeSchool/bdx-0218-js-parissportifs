@@ -128,9 +128,13 @@ app.get('/profil', function(req, res) {
     res.render('pages/profil');
 });
 
-// app.get('/administration', function(req, res) {
-//     res.render('pages/administration');
-// });
+// game
+app.get('/game/:id(\\d+)', function(req, res) {
+    res.render('pages/game');
+});
+app.get('/game', function(req, res) {
+    res.render('pages/game');
+});
 
 app.listen(3000);
 console.log('3000 is the magic port');
