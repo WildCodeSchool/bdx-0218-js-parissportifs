@@ -3,13 +3,29 @@
 }
 
 .bouton_deconnexion{
-        border-color:#fff800;
-        background-color: #fff800;
+        border-color:#11ffee00;;
+        background: #11ffee00;
         width: 40px;
 
 }
 
+.iconBurger{
+        border-color:#11ffee00;;
+        background: #11ffee00;
+}
+
+@media (max-width:750px){
+.titre_navbar{
+    margin-top: 70px;
+}
+}
 @media (min-width:750px) {
     .navbar-custom {
     height: 5vh;
+    
 }
+
+
+
+    
+
