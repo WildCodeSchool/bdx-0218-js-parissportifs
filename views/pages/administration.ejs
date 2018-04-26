@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <% include ../partials/head.ejs %>
+    <link rel="stylesheet" href="/administration.css" />
+</head>
+
+<body>
+
+    <header>
+        <h1 class="text-center">Administration</h1>
+    </header>
+
+    <main>
+        <!--
+        <form method="POST" enctype="multipart/form-data" action="/addpost1">
+            <input type='file' name='monfichier' multiple='multiple'/>
+            <button>Envoyer</button>
+        </form>
+        <div class="form-group">
+            <label for="bg-upfile"><h4>Change the background Main Page</h4></label>
+            <input type="file" class="form-control-file" name='monfichier' multiple='multiple' id="bg-upfile" aria-describedby="fileHelp">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+
+        <div class="form-group">
+            <label for="bg-upfile"><h4>Change the background Main Page</h4></label>
+            <input type="file" class="f  orm-control-file" id="bg-upfile" aria-describedby="fileHelp">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="offset-1 col-10 offset-sm-2 col-sm-8 offset-md-3 col-md-6">
+                    <form class="form" role="form" autocomplete="off" id="formLogin" novalidate="" method="POST" action="/addpost1">
+                        <div class="form-group">
+
+                            <h4>Login please</h4>
+                            <input type="text" id="userName" class="form-control input-sm chat-input" placeholder="username" />
+                            </br>
+                            <input type="password" id="userPassword" class="form-control input-sm chat-input" placeholder="password" />
+                            </br>
+                            <div class="wrapper">
+                                <span class="group-btn">
+                                    <!-- <a href="" class="btn btn-primary btn-md">Login</a> -->
+                                    <button type="submit" class="btn btn-success btn-lg" id="btnLogin">Login</button>
+                                </span>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <% include ../partials/script %>
+
+</body>
+
+</html>
