@@ -118,6 +118,12 @@ app.get('/paris', function(req, res) {
     res.render('pages/paris');
 });
 
+// "Je rentre dans l'arêne //
+app.post('/quotes', (req, res) => {
+  console.log('vous êtes inscris!')
+})
+
+
 // about page
 app.get('/about', function(req, res) {
     res.render('pages/about');
