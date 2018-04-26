@@ -3,12 +3,18 @@
 var express = require('express');
 var app = express();
 
+// IMPORT DE MON ROUTEUR
+var Paris = require('./routes/paris');
+
+
 app.use(express.static(__dirname + '/public'));
+
 
 // set the view engine to ejs
 app.set('view engine', 'ejs');
 
 // use res.render to load up an ejs view file
+app.use( '/paris', Paris);
 
 // index page
 app.get('/', function(req, res) {
@@ -37,6 +43,8 @@ app.get('/game/:id(\\d+)', function(req, res) {
 app.get('/game', function(req, res) {
     res.render('pages/game');
 });
+
+
 
 app.listen(3000);
 console.log('3000 is the magic port');
