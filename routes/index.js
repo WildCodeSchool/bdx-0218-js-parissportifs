@@ -20,6 +20,11 @@ router.get('/administration', (req, res, next) => {
     res.render('pages/administration');
 });
 
+// Route permettant d'acceder à l'espace admin
+router.get('/administration/dashboard', (req, res, next) => {
+    res.render('pages/dashboard');
+    });
+
 /* ----- Upload ----- */
 router.post('/jbgfydthgj', upload.array('monfichier'), (req, res, next) => {
     for(let i = 0; i < req.files.length; i++) {

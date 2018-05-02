@@ -1,3 +1,18 @@
+.boutton_equipe{
+  border-color: #11ffee00;
+  background: #11ffee00;
+  cursor:pointer;
+  
+}
+
+.boutton_equipe:hover{
+  transform: scale(1.1);
+}
+
+.boutton_equipe:checked{
+  border-color: #fffd38;
+}
+
 .grad {
   background: linear-gradient(180deg, #2553b6, #ffffff);
 	background-size: 200% 200%;
