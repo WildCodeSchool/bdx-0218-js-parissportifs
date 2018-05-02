@@ -16,13 +16,16 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form>
+                <form method="post" action="/users/authentificationUsers">
                     <div class="form-group">
-                        <input type="email" class="form-control" id="email" placeholder="email">
+                        <input type="pseudo" class="form-control" name="pseudo" placeholder="pseudo">
                     </div>
                     <div class="form-group">
-                        <input type="password" class="form-control" id="password" placeholder="password">
+                        <input type="password" class="form-control" name="password" placeholder="password">
                     </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary btn-connect btn-arene">Je rentre dans l'arene</button>
+                      </div>
                 </form>
             </div>
             <div class="col-auto">
@@ -33,9 +36,7 @@
                 </label>
                 </div>
             </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-primary btn-connect btn-arene"><a href="http://localhost:3000/paris">Je rentre dans l'arene</a></button>
-              </div>
+             
                 <p class="text-center href=#"><u>Mot de passe oublie?</u></p>
             </div>
             <p class="text-center href=#"><u>Mot de passe oublie?</u></p>
@@ -56,17 +57,17 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form action="/paris" method="post">
+                <form  method="POST" action="/users/addUsers">
                     <div class="form-group">
-                        <input type="pseudo" class="form-control" id="pseudo" placeholder="pseudo">
+                        <input type="text" class="form-control" name="pseudo" placeholder="pseudo">
                     </div>
                     <div class="form-group">
-                        <input type="email" class="form-control" id="email" placeholder="email">
+                        <input type="text" class="form-control" name="email" placeholder="email">
                     </div>
                     <div class="form-group">
-                        <input type="password" class="form-control" id="password" placeholder="password">
+                        <input type="password" class="form-control" name="password" placeholder="password">
                     </div>
-                    <p class="text-center">Choisis ton avatar</p>
+                    <!-- <p class="text-center">Choisis ton avatar</p>
 
                     <div class="container">
                         <div class="row">
@@ -89,7 +90,7 @@
                             <div class="col-md-4 ml-auto col-4">
                                 <img src="logo-avatar/trunk.png" class="img-fluid logo_Avatar_Inscription grab" alt="Logo-trunk"></div>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="modal-footer">
                         <button type="submit" class="btn btn-primary btn-arene">Je rentre dans l'arene</button>
                     </div>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<% include ../partials/head %>
+
+    <body>
+        <h1 >Dashboard</h1>
+
+        <div>
+            <h4>Change the background</h4>
+            <form method="POST" enctype="multipart/form-data" action="/addpost1">
+                <input type='file' name='monfichier' multiple='multiple' />
+                <button type="submit" class="btn btn-primary">Envoyer</button>
+            </form>
+            <!-- <div class="form-group">
+                <label for="bg-upfile"><h4>Change the background Main Page</h4></label>
+                <input type="file" class="form-control-file" name='monfichier' multiple='multiple' id="bg-upfile" aria-describedby="fileHelp">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div> -->
+        </div>
+    </body>
+
+    <% include ../partials/script %>
+
+</html>
