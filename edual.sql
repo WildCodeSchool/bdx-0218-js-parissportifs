@@ -24,12 +24,7 @@ DROP TABLE IF EXISTS `Lots`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `Lots` (
   `gift_id` int(11) NOT NULL,
-  `Place_cinema` varchar(45) DEFAULT NULL,
-  `Carte_YoKaiWatch` varchar(45) DEFAULT NULL,
-  `Un_verre` varchar(45) DEFAULT NULL,
-  `Petit_dejeuner` varchar(45) DEFAULT NULL,
-  `Une_raclette` varchar(45) DEFAULT NULL,
-  `Week_end_Amsterdam` varchar(45) DEFAULT NULL,
+  `gifts` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`gift_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -40,6 +35,7 @@ CREATE TABLE `Lots` (
 
 LOCK TABLES `Lots` WRITE;
 /*!40000 ALTER TABLE `Lots` DISABLE KEYS */;
+INSERT INTO `Lots` VALUES (1,'Place_cinema'),(2,'Carte_YoKaiWatch'),(3,'Un_verre'),(4,'Petit_dejeuner'),(5,'Une_raclette'),(6,'Week_end_amsterdam');
 /*!40000 ALTER TABLE `Lots` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -85,7 +81,7 @@ CREATE TABLE `users` (
   `password` varchar(45) DEFAULT NULL,
   `avatar` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`users_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -94,6 +90,7 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
+INSERT INTO `users` VALUES (1,NULL,NULL,NULL,NULL),(2,NULL,NULL,NULL,NULL),(3,'yallah','yallah666@gmail.com','sdqdq',NULL),(4,'MimiMati','Jesuispetite@gmail.com','petitepourtoujours',NULL),(5,'MimiMati','Jesuispetite@gmail.com','gufgu',NULL),(6,'','','',NULL),(7,'','','',NULL),(8,'','','',NULL),(9,'MimiMati','Jesuispetite@gmail.com','djdhhs',NULL),(10,'','','',NULL);
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -106,4 +103,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-04-24 10:15:42
+-- Dump completed on 2018-05-02 16:14:57
