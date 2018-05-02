@@ -4,13 +4,14 @@ let url_match = "https://api.pandascore.co/matches/" + id_match + ".json?token=m
 
 //match selectionne
 fetch(url_match)
-    .then(res => res.json())
-    .then(json => {
-      console.log("match select json", json)
-      //document.getElementById("match_id").textContent = json.id;
-      document.getElementById("match_opp1").textContent = json.opponents[0].opponent.name;
-      document.getElementById("match_opp2").textContent = json.opponents[1].opponent.name;
-      //document.getElementById("match_date").textContent = json.begin_at;
-    });
+.then(res => res.json())
+.then(json => {
+  console.log("match select json", json)
+  //document.getElementById("match_id").textContent = json.id;
+  document.getElementById("opp1").textContent = json.opponents[0].opponent.name;
+  document.getElementById("opp2").textContent = json.opponents[1].opponent.name;
+  //document.getElementById("match_date").textContent = json.begin_at;
+});
+
 
   
