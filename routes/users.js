@@ -52,15 +52,18 @@ app.post('/authentificationUsers', (req,res,next) => {
          req.body.pseudo,
          req.body.password
     ];
-    let sql = `'SELECT password FROM users WHERE pseudo=${req.body.pseudo}'`;
-    console.log(sql);
+    let sql = `SELECT password FROM users WHERE pseudo='${req.body.pseudo}'`;
     let query = db.query(sql, get, (err, result) => {
+        console.log("query",err, result);
+        console.log(req.body);
+        console.log(result[0]);
         console.log(result[0].password);
-        if (req.body.pseudo && req.body.pseudo === 'pseudo' && req.body.password && req.body.password === 'password') {
-			req.session.authenticated = true;
+        if ( req.body.password && req.body.password === result[0].password) {
+            console.log('GG man');
+            req.session.authenticated = true;
 			res.redirect('/paris');
 		} else {
-			req.flash('error', 'Username and password are incorrect');
+            console.log('Error man');
 			res.redirect('/');
 		}
 
