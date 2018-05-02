@@ -5,38 +5,18 @@ const mysql = require('mysql');
 
 // Create connection
 const db = mysql.createConnection({
-    host: 'localhost', // database host
-    user: 'root', // your database username
-    password: 'Azerty123!', // your database password
-    database: 'edual' // your database name
-});
-
-db.connect((err) => {
-    if (err) {
-        throw err;
-    }
-    console.log('MySql Connected...');
+    host     :  'localhost', 	// database host
+	user     :  'root', 		// your database username
+	password :  'root', 		// your database password
+	database :  'edual' 		// your database name
 });
 
 // Insert
-// app.post('/addUsers', (req, res) => {
-//     let post = {pseudo:'Post Two', password:'This is post number two'};
-//     let sql = 'INSERT INTO users SET ?';
-//     let query = db.query(sql, post, (err, result) => {
-//         if(err) throw err;
-//         console.log(result);
-//         res.send('Posts 1 added...');
-//     });
-// });
-
- app.post('/addUsers', (req, res, next) => {
-    console.log('bitch plz');
-
-     let post = {
-         pseudo: req.body.pseudo,
-         email: req.body.email,
-         password: req.body.password
-     };
+app.post('/addpost1', (req, res, next) => {
+    let post = {
+		pseudo: req.body.username, 
+		password: req.body.userpassword
+	};
     let sql = 'INSERT INTO users SET ?';
     let query = db.query(sql, post, (err, result) => {         
     if (err) throw err;
@@ -45,6 +25,22 @@ db.connect((err) => {
      });
 });
 
+app.post('/addUsers', (req, res, next) => {
+	console.log('bitch plz');
+	
+	let post = {
+	pseudo: req.body.pseudo,
+	email: req.body.email,
+	password: req.body.password
+	};
+	let sql = 'INSERT INTO users SET ?';
+	let query = db.query(sql, post, (err, result) => { 
+	if (err) throw err;
+	console.log(result);
+	res.redirect('/paris');
+	});
+    });
+    
 app.post('/authentificationUsers', (req,res,next) => {
     console.log('Formulaire authentification');
 

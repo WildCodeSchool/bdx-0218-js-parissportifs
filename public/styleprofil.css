@@ -55,11 +55,12 @@ opacity: 0.7;
     font-size: 20px;
   }
 }
+
 @media (max-width: 400px) {
   .btn-circle{
     width : 50px;
     height: 50px;
-    font-size: 15px;
+    font-size: 5px;
   }
   .pseudoAmisProfil {
     font-size: 10px;
@@ -104,6 +105,7 @@ opacity: 0.7;
   animation-iteration-count: infinite;
   animation-fill-mode: none;
   animation-play-state: running;
+
 }
 
 @keyframes stretch {
@@ -118,4 +120,48 @@ opacity: 0.7;
     background-color: none;
   }
 }
-@media (max-width: )
+@media (max-width: 770px) {
+  .fluid2 {
+    /* height: 50px;
+    width: 50px; */
+    margin-top: 10px;
+    padding-left: 0px;
+    padding-right: 5px;
+    animation-name: stretch;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-play-state: paused;
+
+  }
+  .textMatch {
+    font-size: 1.3em;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .textLot {
+    font-size: 1em;
+    padding-top: 5px;
+    text-align: center;
+  }
+  .textLot1 {
+    font-size: 1em;
+    padding-top: 5px;
+    text-align: center;
+  }
+  .textLot2 {
+    font-size: 1em;
+    padding-top: 5px;
+    text-align: center;
+  }
+  .LotProfil {
+    margin-left: 70px;
+    width: 80px;
+  }
+  .vs {
+    font-size: 3em;
+    left: -30px;
+  }

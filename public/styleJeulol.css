@@ -190,3 +190,11 @@
   -webkit-animation-name: hinge;
   animation-name: hinge;
 }
+
+.btn-primary a {
+  color : white;
+}
+
+.btn-primary a:hover {
+  text-decoration : none;
+}

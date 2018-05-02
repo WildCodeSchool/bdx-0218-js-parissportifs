@@ -17,7 +17,7 @@ const mysql = require('mysql');
 const db = mysql.createConnection({
     host     :  'localhost', 	// database host
 	user     :  'root', 		// your database username
-	password :  'wildcodeschool2018', 		// your database password
+	password :  'root', 		// your database password
 	database :  'edual' 		// your database name
 });
 

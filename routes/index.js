@@ -3,12 +3,18 @@ const router = express.Router();
 const multer = require('multer');
 const upload = multer({ dest: 'tmp/' });
 const fs = require('fs');
-const app = express();
+const mysql = require('mysql');
 
-app.get('/', function(req, res) {
-	// render to views/index.ejs template file
-	res.render('index', {title: 'Express'})
-})
+const db = mysql.createConnection({
+    host     :  'localhost', 	// database host
+	user     :  'root', 		// your database username
+	password :  'root', 		// your database password
+	database :  'edual' 		// your database name
+});
+
+router.get('/', function(req, res) {
+    res.render('pages/index');
+});
 
 router.get('/administration', (req, res, next) => {
     res.render('pages/administration');
@@ -38,14 +44,31 @@ router.post('/jbgfydthgj', upload.array('monfichier'), (req, res, next) => {
     }
 });
 
+// "Je rentre dans l'arêne //
+router.post('/quotes', (req, res) => {
+    console.log('vous êtes inscris!')
+})
 
-/**
- * We assign app object to module.exports
- *
- * module.exports exposes the app object as a module
- *
- * module.exports should be used to return the object
- * when this file is required in another module like app.js
- */
-module.exports = app;
+
+// about page
+router.get('/about', function(req, res) {
+    res.render('pages/about');
+});
+
+// profil page
+router.get('/profil', function(req, res) {
+    res.render('pages/profil');
+});
+
+// let sql = 'SELECT gifts from Lots';
+// game
+router.get('/game/:id(\\d+)', function(req, res) {
+    res.render('pages/game');
+});
+
+
+router.get('/game/:id(\\d+)', function(req, res) {
+    res.render('pages/game');
+});
+
 module.exports = router;
