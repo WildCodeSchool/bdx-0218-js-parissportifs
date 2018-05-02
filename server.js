@@ -4,6 +4,11 @@ const express = require('express');
 const app = express();
 const mysql = require('mysql');
 
+// IMPORT DE MON ROUTEUR
+var paris = require('./routes/paris');
+var index = require('./routes/index')
+var users = require('./routes/users')
+
 app.use(express.static(__dirname + '/public'));
 
 /**
@@ -11,35 +16,10 @@ app.use(express.static(__dirname + '/public'));
  * for MySQL connections during request/response life cycle
  */
 var myConnection  = require('express-myconnection')
-/**
- * Store database credentials in a separate config.js file
- * Load the file/module and its values
- */
-// var config = require('./config')
-// var dbOptions = {
-// 	host:	  config.database.host,
-// 	user: 	  config.database.user,
-// 	password: config.database.password,
-// 	port: 	  config.database.port,
-// 	database: config.database.db
-// }
-/**
- * 3 strategies can be used
- * single: Creates single database connection which is never closed.
- * pool: Creates pool of connections. Connection is auto release when response ends.
- * request: Creates new connection per new request. Connection is auto close when response ends.
- */
-// app.use(myConnection(mysql, dbOptions, 'pool'))
 
-// set the view engine to ejs
+ 
 app.set('view engine', 'ejs');
 
-/**
- * import routes/index.js
- * import routes/users.js
- */
-var index = require('./routes/index')
-var users = require('./routes/users')
 
 /**
  * Express Validator Middleware for Form Validation
@@ -111,6 +91,7 @@ app.get('/', function(req, res) {
 
 app.use('/', index)
 app.use('/users', users)
+app.use ('/paris', paris)
 // app.use('/administration', config)
 
 
@@ -124,6 +105,7 @@ app.post('/quotes', (req, res) => {
 })
 
 
+
 // about page
 app.get('/about', function(req, res) {
     res.render('pages/about');
@@ -132,6 +114,16 @@ app.get('/about', function(req, res) {
 // profil page
 app.get('/profil', function(req, res) {
     res.render('pages/profil');
+});
+
+// Administration
+
+app.get('/administration', (req, res, next) => {
+    res.render('administration');
+});
+
+app.get('/administration/dashboard', (req, res, next) => {
+    res.render('dashboard');
 });
 
 // game
