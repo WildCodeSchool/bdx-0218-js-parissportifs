@@ -56,14 +56,12 @@ app.post('/authentificationUsers', (req,res,next) => {
     let query = db.query(sql, get, (err, result) => {
         console.log("query",err, result);
         console.log(req.body);
-        console.log(result[0]);
-        console.log(result[0].password);
         if ( req.body.password && req.body.password === result[0].password) {
             console.log('GG man');
             req.session.authenticated = true;
 			res.redirect('/paris');
 		} else {
-            console.log('Error man');
+            console.log('Error');
 			res.redirect('/');
 		}
 
