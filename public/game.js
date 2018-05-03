@@ -1,6 +1,6 @@
 let url = window.location.pathname;
 let id_match = url.substring(url.lastIndexOf('/') + 1);
-let url_match = "https://api.pandascore.co/matches/" + id_match + ".json?token=mJ8REQ0o29P34viQidrlA7hIs6vKs94-orJbzoWY-2ZMMY9TAoo";
+let url_match = '/api/pandascore/matches?id='+id_match;
 
 //match selectionne
 fetch(url_match)

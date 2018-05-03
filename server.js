@@ -3,6 +3,10 @@
 const express = require('express');
 const app = express();
 const mysql = require('mysql');
+const fetch =require('node-fetch');
+
+
+const http = require('http');
 
 // IMPORT DE MON ROUTEUR
 var paris = require('./routes/paris');
@@ -86,6 +90,28 @@ app.use(function(req, res, next) {
 app.use('/', index);
 app.use('/users', users);
 app.use('/paris', paris);
+app.get('/api/pandascore/upcoming',function(req,res){
+console.log(req.query)
+    fetch('https://api.pandascore.co/'+req.query.game+'/matches/upcoming.json?token=mJ8REQ0o29P34viQidrlA7hIs6vKs94-orJbzoWY-2ZMMY9TAoo')
+    .then(function(response) {
+        return response.json();
+    })
+    .then((json) => {
+        res.json(json)
+    })
+
+});
+app.get('/api/pandascore/matches',function(req,res){
+    console.log(req.query)
+        fetch('https://api.pandascore.co/matches/'+req.query.id+'.json?token=mJ8REQ0o29P34viQidrlA7hIs6vKs94-orJbzoWY-2ZMMY9TAoo')
+        .then(function(response) {
+            return response.json();
+        })
+        .then((json) => {
+            res.json(json)
+        })
+});        
+
 // app.use('/administration', config)
 
 // catch 404 and forward to error handler
