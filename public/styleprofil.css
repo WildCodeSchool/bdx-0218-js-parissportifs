@@ -49,19 +49,19 @@ opacity: 0.7;
   }
 }
 @media (max-width: 769px) {
-  .btn-circle{
+  /* .btn-circle{
     width : 100px;
     height: 100px;
     font-size: 20px;
   }
-}
+} */
 
 @media (max-width: 400px) {
-  .btn-circle{
+  /* .btn-circle{
     width : 50px;
     height: 50px;
     font-size: 5px;
-  }
+  } */
   .pseudoAmisProfil {
     font-size: 10px;
       text-align: center;
@@ -89,12 +89,13 @@ opacity: 0.7;
 .textLot1 {
   padding-top: 5px;
   padding-left: 20px;
+  
 }
 .textLot2 {
   padding-top: 5px;
 }
 .fluid2 {
-  height: 100px;
+  height: auto;
   width: 100px;
   margin: 0 auto;
   animation-name: stretch;

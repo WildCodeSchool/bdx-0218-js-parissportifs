@@ -31,6 +31,10 @@
   font-family: 'Gugi', cursive;
 }
 
+#bim, #oups {
+  border:0
+}
+
 .perso {
   width:50vh;
 }
@@ -110,6 +114,24 @@
     display:none;
   }
 }
+
+.img-fluid3 {
+  opacity: 0.8;
+  }
+  
+  .img-fluid3:active{
+  width: 300px;
+  opacity: 1.5;
+  }
+  
+  .img-fluid4 {
+  opacity: 0.8;
+  }
+  
+  .img-fluid4:active{
+  width: 300px;
+  opacity: 1.5;
+  }
 
 /* -------hinge */
 @-webkit-keyframes hinge {

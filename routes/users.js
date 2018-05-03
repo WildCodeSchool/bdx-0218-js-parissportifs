@@ -7,7 +7,7 @@ const mysql = require('mysql');
 const db = mysql.createConnection({
     host     :  'localhost', 	// database host
 	user     :  'root', 		// your database username
-	password :  'root', 		// your database password
+	password :  'Geronimo@', 		// your database password
 	database :  'edual' 		// your database name
 });
 
@@ -41,26 +41,27 @@ app.post('/addUsers', (req, res, next) => {
 	});
     });
     
-app.post('/authentificationUsers', (req,res,next) => {
-    console.log('Formulaire authentification');
-
-    let get = [
-         req.body.pseudo,
-         req.body.password
-    ];
-    let sql = `'SELECT password FROM users WHERE pseudo=${req.body.pseudo}'`;
-    console.log(sql);
-    let query = db.query(sql, get, (err, result) => {
-        console.log(result[0].password);
-        if (req.body.pseudo && req.body.pseudo === 'pseudo' && req.body.password && req.body.password === 'password') {
-			req.session.authenticated = true;
-			res.redirect('/paris');
+	app.post('/authentificationUsers', (req,res,next) => {
+		console.log('Formulaire authentification');
+		
+		let get = [
+		req.body.pseudo,
+		req.body.password
+		];
+		let sql = `SELECT password FROM users WHERE pseudo='${req.body.pseudo}'`;
+		let query = db.query(sql, get, (err, result) => {
+		console.log("query",err, result);
+		console.log(req.body);
+		if ( req.body.password && req.body.password === result[0].password) {
+		console.log('GG man');
+		req.session.authenticated = true;
+		res.redirect('/paris');
 		} else {
-			req.flash('error', 'Username and password are incorrect');
-			res.redirect('/');
+		console.log('Error');
+		res.redirect('/');
 		}
-
-    }); 
-});
+		
+		}); 
+		});
 
 module.exports = app;

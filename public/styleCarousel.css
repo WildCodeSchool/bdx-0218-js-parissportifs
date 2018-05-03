@@ -7,9 +7,24 @@
 }
 .mario_carousel {
   /* width : 300px; */
-  width: 200px;
+  width: 300px;
   margin-bottom: 5px;
+  padding-top: 100px;
 }
+
+.you-win {
+  padding-top: 50px;
+  width: 500px;
+}
+
+.lol-logo {
+  width: 200px;
+}
+
+.ow-logo {
+  width: 100px;
+}
+
 .carousel-caption>.gift_carousel {
   width: 10%;
 }
@@ -41,6 +56,7 @@
   .carou{
     max-width: 100%;
     height : 900px;
+    background: url(/elements_carousel/fond_noir.jpg) center fixed;
   }
 }
 @media (max-width: 800px) {

@@ -8,7 +8,7 @@ const mysql = require('mysql');
 const db = mysql.createConnection({
     host     :  'localhost', 	// database host
 	user     :  'root', 		// your database username
-	password :  'root', 		// your database password
+	password :  'Geronimo@', 		// your database password
 	database :  'edual' 		// your database name
 });
 
@@ -25,24 +25,26 @@ router.get('/administration/dashboard', (req, res, next) => {
     res.render('pages/dashboard');
     });
 
-/* ----- Upload ----- */
-router.post('/jbgfydthgj', upload.array('monfichier'), (req, res, next) => {
-    for(let i = 0; i < req.files.length; i++) {
-        if (req.files[i].size > 3000000) {
-            res.send('Fichier trop volumineux');
-        } else if (req.files[i].mimetype !== 'image/png'){
-            res.send('Extension de fichier non accepté')
-        } else {
-            fs.rename(req.files[i].path, 'public/img/' + 'background.png', (err) => {
-                if (err) {
-                    res.send('Problème durant le déplacement');
-                } else {
-                	res.send('Fichier uploadé avec succès');
-                }
-            });
-        }
+   
+    /* ----- Upload ----- */
+    router.post('/administration/upload', upload.single('file'), (req, res, next) => {
+        console.log("je suis dans le");
+
+    if (req.file.size > 3000000) {
+    res.send('Fichier trop volumineux');
+    } else if (req.file.mimetype !== 'image/png') {
+    res.send('Extension de fichier non accepté')
+    } else {
+    fs.rename(req.file.path, 'public/img/' + 'background.png', (err) => {
+    if (err) {
+    res.send('Problème durant le déplacement');
+    } else {
+    res.redirect('dashboard')
     }
-});
+    });
+    }
+    
+    });
 
 // "Je rentre dans l'arêne //
 router.post('/quotes', (req, res) => {
