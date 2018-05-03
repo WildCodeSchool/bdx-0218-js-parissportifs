@@ -1,5 +1,5 @@
 //Upcoming matchs LOL
-fetch('https://api.pandascore.co/lol/matches/upcoming.json?token=mJ8REQ0o29P34viQidrlA7hIs6vKs94-orJbzoWY-2ZMMY9TAoo')
+fetch('/api/pandascore/upcoming?game=lol')
     .then(res => res.json())
     .then(json => {
     console.log("LOL json", json)
@@ -28,7 +28,7 @@ fetch('https://api.pandascore.co/lol/matches/upcoming.json?token=mJ8REQ0o29P34vi
 
 
 //Upcoming matchs Overwatch
-fetch('https://api.pandascore.co/ow/matches/upcoming.json?token=mJ8REQ0o29P34viQidrlA7hIs6vKs94-orJbzoWY-2ZMMY9TAoo')
+fetch('/api/pandascore/upcoming?game=ow')
     .then(res => res.json())
     .then(json => {
     console.log("OW json", json)
@@ -55,7 +55,7 @@ fetch('https://api.pandascore.co/ow/matches/upcoming.json?token=mJ8REQ0o29P34viQ
 });
 
 //Upcoming matchs Dota2
-fetch('https://api.pandascore.co/dota2/matches/upcoming.json?token=mJ8REQ0o29P34viQidrlA7hIs6vKs94-orJbzoWY-2ZMMY9TAoo')
+fetch('/api/pandascore/upcoming?game=dota2')
     .then(res => res.json())
     .then(json => {
     console.log("Dota2 json", json)
